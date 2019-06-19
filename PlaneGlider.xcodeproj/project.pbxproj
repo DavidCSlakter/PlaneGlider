@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		750AF11018D26BFB0053952D /* Plane crash1.png in Resources */ = {isa = PBXBuildFile; fileRef = 750AF10F18D26BFB0053952D /* Plane crash1.png */; };
+		750AF11218D26E9F0053952D /* Plane crash2.png in Resources */ = {isa = PBXBuildFile; fileRef = 750AF11118D26E9F0053952D /* Plane crash2.png */; };
+		750AF11418D26F6B0053952D /* Plane crash3.png in Resources */ = {isa = PBXBuildFile; fileRef = 750AF11318D26F6B0053952D /* Plane crash3.png */; };
+		7544EA9218F0CAE600C6D627 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7544EA9118F0CAE600C6D627 /* AVFoundation.framework */; };
+		7544EA9418F0CF5E00C6D627 /* planeEngineSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7544EA9318F0CF5E00C6D627 /* planeEngineSound.mp3 */; };
+		756E079718B1496100E9B833 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756E079618B1496100E9B833 /* Foundation.framework */; };
+		756E079918B1496100E9B833 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756E079818B1496100E9B833 /* CoreGraphics.framework */; };
+		756E079B18B1496100E9B833 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756E079A18B1496100E9B833 /* UIKit.framework */; };
+		756E07A118B1496100E9B833 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 756E079F18B1496100E9B833 /* InfoPlist.strings */; };
+		756E07A318B1496100E9B833 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E07A218B1496100E9B833 /* main.m */; };
+		756E07A718B1496100E9B833 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E07A618B1496100E9B833 /* AppDelegate.m */; };
+		756E07B018B1496100E9B833 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E07AF18B1496100E9B833 /* ViewController.m */; };
+		756E07B218B1496100E9B833 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756E07B118B1496100E9B833 /* Images.xcassets */; };
+		756E07B918B1496100E9B833 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756E07B818B1496100E9B833 /* XCTest.framework */; };
+		756E07BA18B1496100E9B833 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756E079618B1496100E9B833 /* Foundation.framework */; };
+		756E07BB18B1496100E9B833 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756E079A18B1496100E9B833 /* UIKit.framework */; };
+		756E07C318B1496100E9B833 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 756E07C118B1496100E9B833 /* InfoPlist.strings */; };
+		756E07C518B1496100E9B833 /* shape_shifterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E07C418B1496100E9B833 /* shape_shifterTests.m */; };
+		756E07CF18B1497200E9B833 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756E07CE18B1497200E9B833 /* Main_iPhone.storyboard */; };
+		756E07D118B1498700E9B833 /* videogame obstacle1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 756E07D018B1498700E9B833 /* videogame obstacle1.jpg */; };
+		756E07D918B149B000E9B833 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 756E07D818B149B000E9B833 /* Game.m */; };
+		757A981318CE6CCC0023EDDD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757A981218CE6CCC0023EDDD /* iAd.framework */; };
+		758CE9BA18F19E4E00D65919 /* planeCrashSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 758CE9B918F19E4E00D65919 /* planeCrashSound.mp3 */; };
+		758CE9BC18F19EA900D65919 /* Game_crate.png in Resources */ = {isa = PBXBuildFile; fileRef = 758CE9BB18F19EA900D65919 /* Game_crate.png */; };
+		758CE9BE18F19EB500D65919 /* Game_plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 758CE9BD18F19EB500D65919 /* Game_plane.png */; };
+		759B435918FC7D42004C0100 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 759B435818FC7D42004C0100 /* Icon@2x.png */; };
+		759B435B18FC7DDC004C0100 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 759B435A18FC7DDC004C0100 /* Icon-72@2x.png */; };
+		759B435D18FC7E1B004C0100 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 759B435C18FC7E1B004C0100 /* Icon-Small-50@2x.png */; };
+		759D23C718F6383800567356 /* PlaneImage4.png in Resources */ = {isa = PBXBuildFile; fileRef = 759D23C618F6383800567356 /* PlaneImage4.png */; };
+		75AB6F7518FB1A0200EFFE8F /* PlaneImage3.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AB6F7418FB1A0200EFFE8F /* PlaneImage3.png */; };
+		75AB6F7718FB1A0B00EFFE8F /* PlaneImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AB6F7618FB1A0B00EFFE8F /* PlaneImage2.png */; };
+		75AE633F18F8C5FD004A6462 /* AppImage logos 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE633E18F8C5FD004A6462 /* AppImage logos 2.png */; };
+		75AE634118F8C602004A6462 /* AppImage logos 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE634018F8C602004A6462 /* AppImage logos 3.png */; };
+		75AE634318F8C607004A6462 /* AppImage logos 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE634218F8C607004A6462 /* AppImage logos 4.png */; };
+		75AE634918F8C7F0004A6462 /* AppImage logos.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE634818F8C7F0004A6462 /* AppImage logos.png */; };
+		75D85A1718B9AAA700A59CE6 /* Game_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 75D85A1618B9AAA700A59CE6 /* Game_background.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		756E07BC18B1496100E9B833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 756E078B18B1496100E9B833 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 756E079218B1496100E9B833;
+			remoteInfo = "shape shifter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		750AF10F18D26BFB0053952D /* Plane crash1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Plane crash1.png"; sourceTree = "<group>"; };
+		750AF11118D26E9F0053952D /* Plane crash2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Plane crash2.png"; sourceTree = "<group>"; };
+		750AF11318D26F6B0053952D /* Plane crash3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Plane crash3.png"; sourceTree = "<group>"; };
+		7544EA9118F0CAE600C6D627 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7544EA9318F0CF5E00C6D627 /* planeEngineSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = planeEngineSound.mp3; sourceTree = "<group>"; };
+		756E079318B1496100E9B833 /* Plane Glider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plane Glider.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		756E079618B1496100E9B833 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		756E079818B1496100E9B833 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		756E079A18B1496100E9B833 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		756E079E18B1496100E9B833 /* shape shifter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "shape shifter-Info.plist"; sourceTree = "<group>"; };
+		756E07A018B1496100E9B833 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		756E07A218B1496100E9B833 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		756E07A418B1496100E9B833 /* shape shifter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shape shifter-Prefix.pch"; sourceTree = "<group>"; };
+		756E07A518B1496100E9B833 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		756E07A618B1496100E9B833 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		756E07AE18B1496100E9B833 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		756E07AF18B1496100E9B833 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		756E07B118B1496100E9B833 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		756E07B718B1496100E9B833 /* Plane Glider Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Plane Glider Test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		756E07B818B1496100E9B833 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		756E07C018B1496100E9B833 /* shape shifterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "shape shifterTests-Info.plist"; sourceTree = "<group>"; };
+		756E07C218B1496100E9B833 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		756E07C418B1496100E9B833 /* shape_shifterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shape_shifterTests.m; sourceTree = "<group>"; };
+		756E07CE18B1497200E9B833 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		756E07D018B1498700E9B833 /* videogame obstacle1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "videogame obstacle1.jpg"; sourceTree = "<group>"; };
+		756E07D818B149B000E9B833 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		756E07DA18B149B800E9B833 /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		757A981218CE6CCC0023EDDD /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		75834451190D4E5A00365CE8 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		758CE9B918F19E4E00D65919 /* planeCrashSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = planeCrashSound.mp3; sourceTree = "<group>"; };
+		758CE9BB18F19EA900D65919 /* Game_crate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Game_crate.png; sourceTree = "<group>"; };
+		758CE9BD18F19EB500D65919 /* Game_plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Game_plane.png; sourceTree = "<group>"; };
+		759B435818FC7D42004C0100 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		759B435A18FC7DDC004C0100 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		759B435C18FC7E1B004C0100 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		759D23C618F6383800567356 /* PlaneImage4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlaneImage4.png; sourceTree = "<group>"; };
+		75AB6F7418FB1A0200EFFE8F /* PlaneImage3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlaneImage3.png; sourceTree = "<group>"; };
+		75AB6F7618FB1A0B00EFFE8F /* PlaneImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlaneImage2.png; sourceTree = "<group>"; };
+		75AE633E18F8C5FD004A6462 /* AppImage logos 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppImage logos 2.png"; sourceTree = "<group>"; };
+		75AE634018F8C602004A6462 /* AppImage logos 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppImage logos 3.png"; sourceTree = "<group>"; };
+		75AE634218F8C607004A6462 /* AppImage logos 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppImage logos 4.png"; sourceTree = "<group>"; };
+		75AE634818F8C7F0004A6462 /* AppImage logos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppImage logos.png"; sourceTree = "<group>"; };
+		75D85A1618B9AAA700A59CE6 /* Game_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Game_background.png; sourceTree = "<group>"; };
+		75D85A1818B9CE0A00A59CE6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		756E079018B1496100E9B833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7544EA9218F0CAE600C6D627 /* AVFoundation.framework in Frameworks */,
+				757A981318CE6CCC0023EDDD /* iAd.framework in Frameworks */,
+				756E079918B1496100E9B833 /* CoreGraphics.framework in Frameworks */,
+				756E079B18B1496100E9B833 /* UIKit.framework in Frameworks */,
+				756E079718B1496100E9B833 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		756E07B418B1496100E9B833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756E07B918B1496100E9B833 /* XCTest.framework in Frameworks */,
+				756E07BB18B1496100E9B833 /* UIKit.framework in Frameworks */,
+				756E07BA18B1496100E9B833 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		756E078A18B1496100E9B833 = {
+			isa = PBXGroup;
+			children = (
+				756E079C18B1496100E9B833 /* Plane Glider */,
+				756E07BE18B1496100E9B833 /* shape shifterTests */,
+				756E079518B1496100E9B833 /* Frameworks */,
+				756E079418B1496100E9B833 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		756E079418B1496100E9B833 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				756E079318B1496100E9B833 /* Plane Glider.app */,
+				756E07B718B1496100E9B833 /* Plane Glider Test.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		756E079518B1496100E9B833 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75834451190D4E5A00365CE8 /* GameKit.framework */,
+				7544EA9118F0CAE600C6D627 /* AVFoundation.framework */,
+				757A981218CE6CCC0023EDDD /* iAd.framework */,
+				75D85A1818B9CE0A00A59CE6 /* AudioToolbox.framework */,
+				756E079618B1496100E9B833 /* Foundation.framework */,
+				756E079818B1496100E9B833 /* CoreGraphics.framework */,
+				756E079A18B1496100E9B833 /* UIKit.framework */,
+				756E07B818B1496100E9B833 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		756E079C18B1496100E9B833 /* Plane Glider */ = {
+			isa = PBXGroup;
+			children = (
+				756E07A518B1496100E9B833 /* AppDelegate.h */,
+				756E07A618B1496100E9B833 /* AppDelegate.m */,
+				756E07CE18B1497200E9B833 /* Main_iPhone.storyboard */,
+				756E07AE18B1496100E9B833 /* ViewController.h */,
+				756E07AF18B1496100E9B833 /* ViewController.m */,
+				756E07DA18B149B800E9B833 /* Game.h */,
+				756E07D818B149B000E9B833 /* Game.m */,
+				756E07B118B1496100E9B833 /* Images.xcassets */,
+				756E079D18B1496100E9B833 /* Supporting Files */,
+			);
+			name = "Plane Glider";
+			path = "shape shifter";
+			sourceTree = "<group>";
+		};
+		756E079D18B1496100E9B833 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				759B435C18FC7E1B004C0100 /* Icon-Small-50@2x.png */,
+				759B435A18FC7DDC004C0100 /* Icon-72@2x.png */,
+				759B435818FC7D42004C0100 /* Icon@2x.png */,
+				75AB6F7618FB1A0B00EFFE8F /* PlaneImage2.png */,
+				75AB6F7418FB1A0200EFFE8F /* PlaneImage3.png */,
+				75AE634818F8C7F0004A6462 /* AppImage logos.png */,
+				75AE634218F8C607004A6462 /* AppImage logos 4.png */,
+				75AE634018F8C602004A6462 /* AppImage logos 3.png */,
+				75AE633E18F8C5FD004A6462 /* AppImage logos 2.png */,
+				759D23C618F6383800567356 /* PlaneImage4.png */,
+				758CE9BD18F19EB500D65919 /* Game_plane.png */,
+				758CE9BB18F19EA900D65919 /* Game_crate.png */,
+				758CE9B918F19E4E00D65919 /* planeCrashSound.mp3 */,
+				7544EA9318F0CF5E00C6D627 /* planeEngineSound.mp3 */,
+				750AF11318D26F6B0053952D /* Plane crash3.png */,
+				750AF10F18D26BFB0053952D /* Plane crash1.png */,
+				750AF11118D26E9F0053952D /* Plane crash2.png */,
+				75D85A1618B9AAA700A59CE6 /* Game_background.png */,
+				756E07D018B1498700E9B833 /* videogame obstacle1.jpg */,
+				756E079E18B1496100E9B833 /* shape shifter-Info.plist */,
+				756E079F18B1496100E9B833 /* InfoPlist.strings */,
+				756E07A218B1496100E9B833 /* main.m */,
+				756E07A418B1496100E9B833 /* shape shifter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		756E07BE18B1496100E9B833 /* shape shifterTests */ = {
+			isa = PBXGroup;
+			children = (
+				756E07C418B1496100E9B833 /* shape_shifterTests.m */,
+				756E07BF18B1496100E9B833 /* Supporting Files */,
+			);
+			path = "shape shifterTests";
+			sourceTree = "<group>";
+		};
+		756E07BF18B1496100E9B833 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				756E07C018B1496100E9B833 /* shape shifterTests-Info.plist */,
+				756E07C118B1496100E9B833 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		756E079218B1496100E9B833 /* Plane Glider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 756E07C818B1496100E9B833 /* Build configuration list for PBXNativeTarget "Plane Glider" */;
+			buildPhases = (
+				756E078F18B1496100E9B833 /* Sources */,
+				756E079018B1496100E9B833 /* Frameworks */,
+				756E079118B1496100E9B833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Plane Glider";
+			productName = "shape shifter";
+			productReference = 756E079318B1496100E9B833 /* Plane Glider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		756E07B618B1496100E9B833 /* Plane Glider Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 756E07CB18B1496100E9B833 /* Build configuration list for PBXNativeTarget "Plane Glider Test" */;
+			buildPhases = (
+				756E07B318B1496100E9B833 /* Sources */,
+				756E07B418B1496100E9B833 /* Frameworks */,
+				756E07B518B1496100E9B833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				756E07BD18B1496100E9B833 /* PBXTargetDependency */,
+			);
+			name = "Plane Glider Test";
+			productName = "shape shifterTests";
+			productReference = 756E07B718B1496100E9B833 /* Plane Glider Test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		756E078B18B1496100E9B833 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = YourbestApps;
+				TargetAttributes = {
+					756E079218B1496100E9B833 = {
+						DevelopmentTeam = J355S2PZFH;
+					};
+					756E07B618B1496100E9B833 = {
+						TestTargetID = 756E079218B1496100E9B833;
+					};
+				};
+			};
+			buildConfigurationList = 756E078E18B1496100E9B833 /* Build configuration list for PBXProject "PlaneGlider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 756E078A18B1496100E9B833;
+			productRefGroup = 756E079418B1496100E9B833 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				756E079218B1496100E9B833 /* Plane Glider */,
+				756E07B618B1496100E9B833 /* Plane Glider Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		756E079118B1496100E9B833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AE634118F8C602004A6462 /* AppImage logos 3.png in Resources */,
+				759B435918FC7D42004C0100 /* Icon@2x.png in Resources */,
+				75D85A1718B9AAA700A59CE6 /* Game_background.png in Resources */,
+				758CE9BC18F19EA900D65919 /* Game_crate.png in Resources */,
+				75AE634918F8C7F0004A6462 /* AppImage logos.png in Resources */,
+				759B435B18FC7DDC004C0100 /* Icon-72@2x.png in Resources */,
+				756E07D118B1498700E9B833 /* videogame obstacle1.jpg in Resources */,
+				75AB6F7718FB1A0B00EFFE8F /* PlaneImage2.png in Resources */,
+				758CE9BE18F19EB500D65919 /* Game_plane.png in Resources */,
+				758CE9BA18F19E4E00D65919 /* planeCrashSound.mp3 in Resources */,
+				75AE634318F8C607004A6462 /* AppImage logos 4.png in Resources */,
+				7544EA9418F0CF5E00C6D627 /* planeEngineSound.mp3 in Resources */,
+				756E07B218B1496100E9B833 /* Images.xcassets in Resources */,
+				750AF11218D26E9F0053952D /* Plane crash2.png in Resources */,
+				750AF11418D26F6B0053952D /* Plane crash3.png in Resources */,
+				756E07CF18B1497200E9B833 /* Main_iPhone.storyboard in Resources */,
+				750AF11018D26BFB0053952D /* Plane crash1.png in Resources */,
+				759D23C718F6383800567356 /* PlaneImage4.png in Resources */,
+				759B435D18FC7E1B004C0100 /* Icon-Small-50@2x.png in Resources */,
+				75AE633F18F8C5FD004A6462 /* AppImage logos 2.png in Resources */,
+				75AB6F7518FB1A0200EFFE8F /* PlaneImage3.png in Resources */,
+				756E07A118B1496100E9B833 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		756E07B518B1496100E9B833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756E07C318B1496100E9B833 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		756E078F18B1496100E9B833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756E07B018B1496100E9B833 /* ViewController.m in Sources */,
+				756E07A718B1496100E9B833 /* AppDelegate.m in Sources */,
+				756E07A318B1496100E9B833 /* main.m in Sources */,
+				756E07D918B149B000E9B833 /* Game.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		756E07B318B1496100E9B833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756E07C518B1496100E9B833 /* shape_shifterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		756E07BD18B1496100E9B833 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 756E079218B1496100E9B833 /* Plane Glider */;
+			targetProxy = 756E07BC18B1496100E9B833 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		756E079F18B1496100E9B833 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				756E07A018B1496100E9B833 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		756E07C118B1496100E9B833 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				756E07C218B1496100E9B833 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		756E07C618B1496100E9B833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		756E07C718B1496100E9B833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		756E07C918B1496100E9B833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "shape shifter/shape shifter-Prefix.pch";
+				INFOPLIST_FILE = "shape shifter/shape shifter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		756E07CA18B1496100E9B833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "shape shifter/shape shifter-Prefix.pch";
+				INFOPLIST_FILE = "shape shifter/shape shifter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		756E07CC18B1496100E9B833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/shape shifter.app/shape shifter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "shape shifter/shape shifter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "shape shifterTests/shape shifterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		756E07CD18B1496100E9B833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/shape shifter.app/shape shifter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "shape shifter/shape shifter-Prefix.pch";
+				INFOPLIST_FILE = "shape shifterTests/shape shifterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		759B435E18FCB3F0004C0100 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		759B435F18FCB3F0004C0100 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "shape shifter/shape shifter-Prefix.pch";
+				INFOPLIST_FILE = "shape shifter/shape shifter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		759B436018FCB3F0004C0100 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/shape shifter.app/shape shifter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "shape shifter/shape shifter-Prefix.pch";
+				INFOPLIST_FILE = "shape shifterTests/shape shifterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		756E078E18B1496100E9B833 /* Build configuration list for PBXProject "PlaneGlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				756E07C618B1496100E9B833 /* Debug */,
+				756E07C718B1496100E9B833 /* Release */,
+				759B435E18FCB3F0004C0100 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		756E07C818B1496100E9B833 /* Build configuration list for PBXNativeTarget "Plane Glider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				756E07C918B1496100E9B833 /* Debug */,
+				756E07CA18B1496100E9B833 /* Release */,
+				759B435F18FCB3F0004C0100 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		756E07CB18B1496100E9B833 /* Build configuration list for PBXNativeTarget "Plane Glider Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				756E07CC18B1496100E9B833 /* Debug */,
+				756E07CD18B1496100E9B833 /* Release */,
+				759B436018FCB3F0004C0100 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 756E078B18B1496100E9B833 /* Project object */;
+}

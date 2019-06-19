@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Game-->
+        <scene sceneID="iZS-IU-ORZ">
+            <objects>
+                <viewController id="pNk-72-KAf" customClass="Game" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JdY-GG-KlO"/>
+                        <viewControllerLayoutGuide type="bottom" id="PGz-8p-5Hy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sjm-3Z-lOu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap and hold on the left and the right to move th traingle through the obstacles" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="245" translatesAutoresizingMaskIntoConstraints="NO" id="AVl-zn-sv0">
+                                <rect key="frame" x="-402" y="295" width="245" height="200"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="pGd-3E-J5n">
+                                <rect key="frame" x="-157" y="-1" width="704" height="668"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game_crate.png" translatesAutoresizingMaskIntoConstraints="NO" id="CVW-kX-04Z">
+                                <rect key="frame" x="40" y="-17" width="90" height="103"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game_crate.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Ha-g0-Afv">
+                                <rect key="frame" x="167" y="147" width="76" height="72"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game_crate.png" translatesAutoresizingMaskIntoConstraints="NO" id="FIq-uB-w5l">
+                                <rect key="frame" x="253" y="44" width="171" height="87"/>
+                            </imageView>
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PlaneImage4.png" translatesAutoresizingMaskIntoConstraints="NO" id="kQT-BP-bFO">
+                                <rect key="frame" x="133" y="427" width="55" height="51"/>
+                                <rect key="contentStretch" x="1" y="1" width="0.0" height="0.0"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game_crate.png" translatesAutoresizingMaskIntoConstraints="NO" id="rlJ-Yy-dBg">
+                                <rect key="frame" x="230" y="33" width="84" height="124"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game_crate.png" translatesAutoresizingMaskIntoConstraints="NO" id="ouH-RA-Kpa">
+                                <rect key="frame" x="-21" y="269" width="105" height="90"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game_crate.png" translatesAutoresizingMaskIntoConstraints="NO" id="klX-Yz-FIY">
+                                <rect key="frame" x="199" y="252" width="121" height="86"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game_crate.png" translatesAutoresizingMaskIntoConstraints="NO" id="ogq-ma-zo4">
+                                <rect key="frame" x="25" y="115" width="121" height="90"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHP-8j-4fu">
+                                <rect key="frame" x="60" y="20" width="201" height="39"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="39"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8v-Lf-plL">
+                                <rect key="frame" x="77" y="158" width="82" height="49"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="jUE-ib-nvx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tc5-Bo-YgZ">
+                                <rect key="frame" x="195" y="168" width="129" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Replay">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="replay:" destination="pNk-72-KAf" eventType="touchUpInside" id="WXC-4E-bks"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFt-1w-iG3">
+                                <rect key="frame" x="17" y="224" width="338" height="313"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="26"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="pNk-72-KAf" eventType="touchUpInside" id="yJ7-ct-wvA"/>
+                                </connections>
+                            </button>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ci-Z1-1Hp">
+                                <rect key="frame" x="38" y="617" width="320" height="50"/>
+                                <connections>
+                                    <outlet property="delegate" destination="pNk-72-KAf" id="SwG-l9-Xoy"/>
+                                </connections>
+                            </adBannerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spz-9r-J6a">
+                                <rect key="frame" x="-9" y="3" width="93" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Pause:" destination="pNk-72-KAf" eventType="touchUpInside" id="pyi-bL-ltK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clm-VZ-XBX">
+                                <rect key="frame" x="65" y="224" width="244" height="135"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Resume">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Resume:" destination="pNk-72-KAf" eventType="touchUpInside" id="72n-jZ-Dnx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNd-va-Nw2">
+                                <rect key="frame" x="136" y="191" width="178" height="53"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42399407378304171" green="0.47195784093998883" blue="0.5191127232142857" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dwf-hd-dZI"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="Obstacle1" destination="CVW-kX-04Z" id="4O1-Ky-B0a"/>
+                        <outlet property="Obstacle2" destination="FIq-uB-w5l" id="6DM-Au-gyZ"/>
+                        <outlet property="Obstacle3" destination="5Ha-g0-Afv" id="qsG-gL-asn"/>
+                        <outlet property="Obstacle4" destination="rlJ-Yy-dBg" id="hcE-Yl-LaW"/>
+                        <outlet property="Obstacle5" destination="ouH-RA-Kpa" id="Nwu-2E-iFq"/>
+                        <outlet property="Obstacle6" destination="ogq-ma-zo4" id="arV-af-dCD"/>
+                        <outlet property="Obstacle7" destination="klX-Yz-FIY" id="D7U-g0-IBf"/>
+                        <outlet property="Pause" destination="spz-9r-J6a" id="UHu-Tt-UcM"/>
+                        <outlet property="Resume" destination="clm-VZ-XBX" id="rk5-g2-vDI"/>
+                        <outlet property="Score" destination="JHP-8j-4fu" id="vJX-56-Lsx"/>
+                        <outlet property="highScoreLabel" destination="cNd-va-Nw2" id="Der-1Z-sWz"/>
+                        <outlet property="menu" destination="y8v-Lf-plL" id="jEb-TP-yVq"/>
+                        <outlet property="replay" destination="Tc5-Bo-YgZ" id="PmW-Ua-7gh"/>
+                        <outlet property="start" destination="rFt-1w-iG3" id="3ac-MT-01q"/>
+                        <outlet property="triangle" destination="kQT-BP-bFO" id="w8J-HV-lrA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iwa-SC-ui0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-172.5" y="144.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2YU-Ph-ghA"/>
+                        <viewControllerLayoutGuide type="bottom" id="KMT-tz-vRK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="nWD-X8-BNZ">
+                                <rect key="frame" x="0.0" y="-9" width="618" height="697"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plane Glider" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nua-oC-MTS">
+                                <rect key="frame" x="60" y="-9" width="386" height="97"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="53"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="307" translatesAutoresizingMaskIntoConstraints="NO" id="sSw-x9-Jg7">
+                                <rect key="frame" x="34" y="207" width="307" height="167"/>
+                                <string key="text">Touch on the right and left of the screen to move the plane past the obstacles. If you go too far on either side, the plane will appear on the opposite side.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiS-qU-ASj">
+                                <rect key="frame" x="87" y="78" width="200" height="121"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instructions:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBD-Pi-1QV">
+                                <rect key="frame" x="93" y="186" width="189" height="64"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bi1-4Q-sAI">
+                                <rect key="frame" x="35" y="617" width="320" height="50"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="Ssq-op-joa"/>
+                                </connections>
+                            </adBannerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZF-Kf-ShC">
+                                <rect key="frame" x="93" y="455" width="189" height="69"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="32"/>
+                                <state key="normal" title="Touch To Start">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pNk-72-KAf" kind="modal" id="qgo-aL-dc2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42384757143482327" green="0.47179476570796752" blue="0.51893335459183676" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WkC-9M-F9A"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="HighScore" destination="PiS-qU-ASj" id="fw7-Y2-eE2"/>
+                        <outlet property="Start" destination="SZF-Kf-ShC" id="5jI-tX-sLJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-574.5" y="144.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Game_background.png" width="1920" height="997"/>
+        <image name="Game_crate.png" width="753" height="617"/>
+        <image name="PlaneImage4.png" width="695" height="726"/>
+    </resources>
+    <color key="tintColor" red="0.34024234693877553" green="0.34024234693877553" blue="0.34024234693877553" alpha="1" colorSpace="calibratedRGB"/>
+</document>
